@@ -20,8 +20,7 @@ public class FileDateUtil {
 			
 			dt = dateFormat.parse(date);
 		} catch (ParseException e) {
-			String stackTrace = ExceptionUtil.convertStackTrace(e);
-			MailUtil.getInstance().sendMessage(e.getMessage() + " - " + stackTrace);
+			// do something
 		}
 		
 		return dt;
