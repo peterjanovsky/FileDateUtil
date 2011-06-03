@@ -2,9 +2,13 @@
 
 ### file date properties
 
-     mtime: time of last modification
-     ctime: time of last status change
-     atime: time of last access
+     use these libraries to make the following file properties accessible within your Java source
+
+          mtime: time of last modification
+          ctime: time of last status change
+          atime: time of last access
+
+     the C source utilizes the stat() POSIX library functions and is accessible via JNI from the Java source
 
 ### building
 
